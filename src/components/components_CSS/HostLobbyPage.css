@@ -1,0 +1,21 @@
+.HostMainPage{
+    background-color: white;
+}
+.HostMainPage p{
+    font-size: large;
+    color: black;
+}
+.HostMainPage a{
+    background-color:  #45A29E;
+    border: none;
+    text-align: center;
+    display: none;
+}
+.HostMainPage a:hover{
+    opacity: 0.7;
+    text-align: center;
+    transition: all 1s;}
+    
+.HostMainPage img{
+    width: 50%;
+}

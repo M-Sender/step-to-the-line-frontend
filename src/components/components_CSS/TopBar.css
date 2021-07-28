@@ -1,0 +1,10 @@
+.topBar{
+    /*background-image: linear-gradient(to bottom right, rgb(107, 2, 2) , rgb(170, 126, 126));*/
+    background-color: #202733;
+}
+.topBar a{
+    color: #66fcf0;
+}
+.toggleBut{
+    background-color: white;
+}

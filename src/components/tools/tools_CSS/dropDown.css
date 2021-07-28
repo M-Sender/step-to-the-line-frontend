@@ -1,0 +1,12 @@
+.settingContainer{
+    margin-top: 7px;
+    margin-bottom: 2%;
+    margin-left: 10px;
+}
+.inputLabel{
+    align-content: center;
+    font-size: medium;
+}
+.inputBox{
+    margin-right: 10%;
+}

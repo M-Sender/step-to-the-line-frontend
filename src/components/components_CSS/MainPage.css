@@ -1,0 +1,51 @@
+.mainpage p{
+    text-indent: 45px;
+    color: white;
+    font-weight: lighter;
+    font-size: large;
+}
+.mainpage .odd p{
+    text-indent: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    font-size: large;
+    text-align: left;
+}
+.mainpage img{
+    width: 40%;
+    height: auto;
+    text-align: center;
+}
+.mainpage .row{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+    /*margin-top: 50px;*/
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+.mainpage h1{
+    padding-top: 10px;
+    text-indent: 5px;
+    font-size: 300%;
+}
+.mainpage .welcomeBar{
+    border-bottom: 2px solid black;
+}
+.mainpage .welcomeBar .col{
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .mainpage h1{
+        text-align: center;
+        text-indent: 0;
+    }
+    .mainpage .even p{
+        text-indent: 30px;
+        text-align: left;
+    }
+    .mainpage{
+        font-weight: normal;
+    }
+    
+}

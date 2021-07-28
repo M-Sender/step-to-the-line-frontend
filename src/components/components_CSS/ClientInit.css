@@ -1,0 +1,172 @@
+.errMess{
+    color: rgb(184, 43, 43);
+    font-size: small;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    visibility: hidden;
+
+}
+
+
+/*below is usable other than clientinit */
+.ClientInit{
+  padding-bottom: 150px;
+}
+/*.clientInit{
+    display:grid;
+    grid-template-columns: auto;
+}*/
+.upperText{
+  padding-bottom: 20px;
+    grid-row: 1;
+    font-size: 100%;
+    margin-top: 1%;
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.inputContainer{
+  padding-bottom: 20px;
+    grid-row: 2;
+    text-align: center;
+
+}
+
+.boxesLabel{
+    display: none;
+}
+.actionContainer{
+  padding-bottom: 20px;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.continueButton{
+    grid-column: 2;
+  width: 50%;
+}
+.backButton{
+    grid-column: 1;
+    visibility: hidden;
+    width: 50%;
+}
+
+
+
+
+.rightToLeft{
+  animation: right_to_left 2s ease;
+}
+.leftToRight{
+  animation: left_to_right 2s ease;
+}
+
+
+
+
+
+
+
+
+@keyframes right_to_left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes left_to_right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blinking-cursor {
+    color: #2E3D48;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }

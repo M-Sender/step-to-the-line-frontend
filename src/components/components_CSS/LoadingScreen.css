@@ -1,0 +1,7 @@
+.LoadingScreen{
+z-index: -1;
+}
+.LoadingScreen img{
+    width: max-content;
+    height: max-content;
+}

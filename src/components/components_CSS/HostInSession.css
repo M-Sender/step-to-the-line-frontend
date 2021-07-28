@@ -1,0 +1,25 @@
+.HostInSession{
+background-color: rgb(255, 255, 255);
+margin-left: 10%;
+margin-right: 10%;
+color: rgb(0, 0, 0);
+}
+.HostInSession p{
+    font-size: 150%;
+}
+.HostInSession .row{
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+.HostInSession .botRow{
+    padding-bottom: 0px;
+}
+.HostInSession button{
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #45A29E;
+}
+
