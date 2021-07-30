@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 
 import config from '../config.js';
 
-const ENDPOINT = `${config.npmClient.siteName}:${config.socketIO.port}`;
+const ENDPOINT = `${config.npmClient.siteName}`;
 var connectionOptions =  {
   "force new connection" : false,
   "reconnectionAttempts": "Infinity", //"Infinity" 

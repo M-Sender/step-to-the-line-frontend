@@ -16,7 +16,7 @@ const cookies = new Cookies();
 
 
 
-const ENDPOINT = `${config.npmClient.siteName}:${config.socketIO.port}`;
+const ENDPOINT = `${config.npmClient.siteName}`;
 var connectionOptions =  {
   "force new connection" : true,
   "reconnectionAttempts": "Infinity", 

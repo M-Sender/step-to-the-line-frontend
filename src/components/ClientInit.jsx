@@ -5,7 +5,7 @@ import socketIOClient from "socket.io-client";
 import './components_CSS/ClientInit.css'
 import config from '../config.js';
 
-const ENDPOINT = `${config.npmClient.siteName}:${config.socketIO.port}`;
+const ENDPOINT = `${config.npmClient.siteName}`;
 var connectionOptions =  {
   "force new connection" : true,
   "reconnectionAttempts": "Infinity", 
