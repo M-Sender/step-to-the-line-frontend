@@ -13,7 +13,7 @@ var QRCode = require('qrcode');
 //var fs = require('fs');
 
 
-const ENDPOINT = `${config.npmClient.siteName}:${config.socketIO.port}`;
+const ENDPOINT = `${config.npmClient.siteName}`;
 var connectionOptions =  {
   "force new connection" : false,
   "reconnectionAttempts": "Infinity", //"Infinity" 
