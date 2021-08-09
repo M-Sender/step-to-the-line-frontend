@@ -27,7 +27,7 @@ html,body
   
 }
 .even{
-  background-color: gray;
+  background-color: rgb(88, 88, 88);
   border-top: 2px solid black;
 }
 .odd{

@@ -38,7 +38,7 @@ function HostMainPage() {
           setsessionID(data.sessionID);
           cookies.set('sessionID',data.sessionID,{ path : '/' });
           cookies.set('token',data.token ,{ path : '/' });
-          var userJoinqr = `http://${config.npmClient.siteName}:3000/userinfo/?${data.sessionID}`;
+          var userJoinqr = `http://${config.npmClient.LocaltestDevSitName}/userinfo/?${data.sessionID}`;
           QRCode.toDataURL(userJoinqr, function (err, url) {
           if(err) return console.log("error occured");
            console.log(userJoinqr);

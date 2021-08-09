@@ -29,6 +29,7 @@ function HostAnalytics() {
     const [quartile100, setquartile100] = useState('Loading...');
     const [sessionAvg, setsessionAvg] = useState('Loading...');
     const [sessionStd, setsessionStd] = useState('Loading...');
+    const [sessionQuestions, setsessiondQuestions] = useState('Loading...');
 
     useEffect(()=> {
     socket.once('connect', function(){
@@ -53,6 +54,7 @@ function HostAnalytics() {
         setquartile100(data.quartiles[3]);
         setsessionAvg(data.avg);
         setsessionStd(data.std);
+        setsessiondQuestions(data.questions);
   });
 
   function endSession(){
@@ -89,7 +91,10 @@ function HostAnalytics() {
       <Row>
       <p>Session Average:    {sessionAvg}</p></Row>
       <Row><p>Session Standard Deviation:    {sessionStd}</p></Row>
-      <center><button onClick={endSession}> close session </button></center>
+      <Row>
+        <Col> {sessionQuestions}</Col>
+        </Row>
+      <center><button onClick={endSession}> Close Session </button></center>
     </div>
 
   ); //end jsx

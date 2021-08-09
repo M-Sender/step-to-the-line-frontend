@@ -54,7 +54,7 @@ function JoinSession() {
           <Col>
           <center>
             <form>
-                <input type="text" id="sessionID" name="sessionID" onChange={checkChar} />
+                <input type="text" id="sessionID" name="sessionID" onChange={checkChar} onSubmit={verifySession}/>
             </form>
         </center> 
           </Col>
