@@ -10,7 +10,7 @@ import config from '../config.js';
 const cookies = new Cookies();
 
 
-const ENDPOINT = `${config.npmClient.siteName}`;
+const ENDPOINT = `${config.npmClient.backendRoute}`;
 var connectionOptions =  {
   "force new connection" : true,
   "reconnectionAttempts": "Infinity", 
