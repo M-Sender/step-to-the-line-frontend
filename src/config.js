@@ -1,5 +1,8 @@
 //use dotenv and use same method as backend
-process.env.NODE_ENV !== 'production' ? require('dotenv').config() : 1+1;
+if(process.env.NODE_ENV !== 'production'){
+    require('dotenv').config();
+} 
+
 var config = {};
 
 config.socketIO = {};
