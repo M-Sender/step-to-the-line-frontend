@@ -13,7 +13,7 @@ var QRCode = require('qrcode');
 //var fs = require('fs');
 
 
-const ENDPOINT = `${config.npmClient.siteName}`;
+const ENDPOINT = `${config.npmClient.backendRoute}`;
 var connectionOptions =  {
   "force new connection" : false,
   "reconnectionAttempts": "Infinity", //"Infinity" 
@@ -38,7 +38,7 @@ function HostMainPage() {
           setsessionID(data.sessionID);
           cookies.set('sessionID',data.sessionID,{ path : '/' });
           cookies.set('token',data.token ,{ path : '/' });
-          var userJoinqr = `http://${config.npmClient.LocaltestDevSitName}/userinfo/?${data.sessionID}`;
+          var userJoinqr = `http://${config.npmClient.frontendRoute}/userinfo/?${data.sessionID}`;
           QRCode.toDataURL(userJoinqr, function (err, url) {
           if(err) return console.log("error occured");
            console.log(userJoinqr);
@@ -62,7 +62,6 @@ function HostMainPage() {
         <Col><p >There are {numPartic} currently connected to {sessionID}.</p></Col>
         </Row>
       <Row>
-      <a id="linkTemp" style={{'grid-column':2}} href={`http://localhost:3000/userinfo/?${sessionID}`}>link</a>
       <Col><center><Link id='beginSession' to={`/hostinsession/`} className="btn">Begin</Link></center></Col>
         </Row>
       </div>

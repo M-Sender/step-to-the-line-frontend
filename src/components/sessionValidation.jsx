@@ -2,7 +2,7 @@ import Cookies from 'universal-cookie';
 import socketIOClient from "socket.io-client";
 import config from '../config.js';
 
-const ENDPOINT = `${config.npmClient.siteName}`;
+const ENDPOINT = `${config.npmClient.backendRoute}`;
 var connectionOptions =  {
   "force new connection" : true,
   "reconnectionAttempts": "Infinity", 

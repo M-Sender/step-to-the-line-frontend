@@ -5,7 +5,7 @@ import socketIOClient from "socket.io-client";
 import './components_CSS/ClientInit.css'
 import config from '../config.js';
 
-const ENDPOINT = `${config.npmClient.siteName}`;
+const ENDPOINT = `${config.npmClient.backendRoute}`;
 var connectionOptions =  {
   "force new connection" : true,
   "reconnectionAttempts": "Infinity", 
@@ -110,7 +110,6 @@ function ClientInit() {
       cookies.set('sessionID', sessionID, { path: '/' });
 
       setTimeout(() => {
-       // window.location.href = `/userpage/?${sessionID}`;
         window.location.href = `/userpage/`;
 
       }, 300);
