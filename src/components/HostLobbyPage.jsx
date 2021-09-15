@@ -20,7 +20,7 @@ var connectionOptions =  {
   "timeout" : 10000,                  
   "transports" : ["websocket" ]
 };
-
+console.log(ENDPOINT);
 
 function HostMainPage() {
     //get random or something to name sessionID
